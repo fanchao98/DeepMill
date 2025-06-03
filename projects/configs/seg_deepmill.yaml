@@ -1,0 +1,86 @@
+# --------------------------------------------------------
+# Octree-based Sparse Convolutional Neural Networks
+# Copyright (c) 2022 Peng-Shuai Wang <wangps@hotmail.com>
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Peng-Shuai Wang
+# --------------------------------------------------------
+
+SOLVER:
+  gpu: 0,
+  run: train
+  type: sgd
+  best_val: max:mIoU
+
+  logdir: logs/seg_shapenet/02691156_airplane_d5
+  max_epoch: 300
+  test_every_epoch: 10
+
+  # lr_type: cos
+  milestones: (120,180,240)
+  ckpt_num: 20
+
+DATA:
+  train:
+    name: shapenet
+
+    # octree building
+    depth: 5
+    full_depth: 2
+
+    # transformation
+    orient_normal: xyz
+
+    # data augmentations
+    distort: True
+    angle: (0, 5, 0)
+    interval: (1, 1, 1)
+    scale: 0.25
+    jitter: 0.25
+    uniform: True
+
+    # data loading
+    location: data/points
+    filelist: data/filelist/10_train_val.txt
+    batch_size: 4
+    shuffle: True
+    # num_workers: 0
+
+  test:
+    name: shapenet
+
+    # octree building
+    depth: 5
+    full_depth: 2
+
+    # transformation
+    orient_normal: xyz
+
+    # data augmentations
+    distort: True   # False -> no data augmentation
+    angle: (0, 5, 0)
+    interval: (1, 1, 1)
+    scale: 0.25
+    jitter: 0.25
+    uniform: True
+
+    # data loading
+    location: data/points
+    filelist: data/filelist/10_test.txt
+    batch_size: 1
+    shuffle: True
+    # num_workers: 0
+
+MODEL:
+  name: segnet
+  feature: ND   # N -> Normal(3 channels);
+                # D -> Local displacement(1 channel)
+  upsample: 'nearest'   # The method used for upsampling
+  interp:   'linear'    # The interplation method: linear or nearest
+  stages: 3
+  channel: 4
+  nout: 4
+
+
+LOSS:
+  mask: -1
+  num_class: 2
