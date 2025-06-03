@@ -18,7 +18,7 @@ import utils
 parser = argparse.ArgumentParser()
 parser.add_argument('--run', type=str, required=False, default='prepare_dataset',
                     help='The command to run.')
-parser.add_argument('--sr', type=float, required=False, default=0,
+parser.add_argument('--sr', type=float, required=False, default=0.8,
                     help='tran and valid data split ration.')
 args = parser.parse_args()
 
