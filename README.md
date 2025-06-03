@@ -54,16 +54,16 @@ The dataset will be randomly split into a training set and a test set.
 
 Run the following command to visualize the training and testing process:
 ```
-tensorboard --logdir .\DeepMill\projects\logs
+tensorboard --logdir projects/logs
 ```
 
 A checkpoint of our model is provided in `pretrained/00840solver.zip`(154M). Note that if you haven't installed Git LFS, please download `00840solver.zip` separately by clicking on it in GitHub.
 
 ## 4. Test
 
-Open the `seg_deepmill.yaml` file in `DeepMill\projects\configs`, and change `run: train` to `run: test` to perform testing only.
+Open the `seg_deepmill.yaml` file in `projects/configs`, and change `run: train` to `run: test` to perform testing only.
 
-In `DeepMill\projects\data\vis`, you can view the accessible points predicted by DeepMill for the 3D models in the test set.
+In `projects/data/vis`, you can view the accessible points predicted by DeepMill for the 3D models in the test set.
 
 
 This will open a polyscope window and show the results.
