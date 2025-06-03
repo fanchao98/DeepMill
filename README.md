@@ -33,7 +33,7 @@ To prepare the dataset, first store the accessibility results computed by tradit
 Assuming the subfolder is named `models`, place all accessibility data of the 3D models in `DeepMill/projects/data/raw_data/models`, where each `.txt` file corresponds to a single 3D model.
 Each line in the file contains 8 values representing a sampled point: 3D coordinates (X, Y, Z), normals (XN, YN, ZN), and two binary labels indicating whether the point is inaccessible or occluded. 
 Additionally, the tool sizes used for each 3D model should be stored in `DeepMill/projects/data/raw_data/models_cutter`, with each `.txt` file containing four parameters that define the tool's shape. 
-We provide part of the data we used in `data/raw_data`. If you haven't installed Git LFS, please download `data.zip`(568M) separately by clicking on it in GitHub.
+We provide part of the data we used in `data/raw_data/data.zip`. If you haven't installed Git LFS, please download `data.zip`(568M) separately by clicking on it in GitHub.
 
 Once the data is in place, run the following command to preprocess the dataset:
 ```
