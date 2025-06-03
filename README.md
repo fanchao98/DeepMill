@@ -62,11 +62,9 @@ A checkpoint of our model is provided in `pretrained/00840solver.zip`. Note that
 ## 4. Test
 
 Open the `seg_deepmill.yaml` file in `projects/configs`, and change `run: train` to `run: test` to perform testing only.
+In `projects/data/vis`, you can view the inaccessible points predicted by DeepMill for the 3D models in the test set.
 
-In `projects/data/vis`, you can view the accessible points predicted by DeepMill for the 3D models in the test set.
 
-
-This will open a polyscope window and show the results.
 
 ## 5. Citation
 
