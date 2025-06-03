@@ -48,7 +48,7 @@ If successful, the script will create two new folders, `filelist` and `points`, 
 Run the following command to train the network:
 
 ```
-python scripts/run_seg_deepmill.py --depth 5 --model unet --alias unet_d5
+python projects/run_seg_deepmill.py --depth 5 --model unet --alias unet_d5
 ```
 The dataset will be randomly split into a training set and a test set.
 
