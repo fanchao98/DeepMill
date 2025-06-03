@@ -3,7 +3,7 @@
 
 <!-- [**DeepMill: Neural Accessibility Learning for Subtractive Manufacturing**](https://dl.acm.org/doi/10.1145/3618317) -->
 [**DeepMill: Neural Accessibility Learning for Subtractive Manufacturing**](https://arxiv.org/abs/2309.05613) <br/>
-[Fanchao Zhong](https://fanchao98.github.io/), Yang Wang, [Peng-Shuai Wang](https://wang-ps.github.io/), [Lin Lu](https://irc.cs.sdu.edu.cn/~lulin/index.html), and [Haisen Zhao](https://haisenzhao.github.io/) <br/>
+[Fanchao Zhong](https://fanchao98.github.io/), [Yang Wang](https://chfaithwy.github.io/), [Peng-Shuai Wang](https://wang-ps.github.io/), [Lin Lu](https://irc.cs.sdu.edu.cn/~lulin/index.html), and [Haisen Zhao](https://haisenzhao.github.io/) <br/>
 ACM SIGGRAPH 2025 (conference track)
 
 ![](img/teaser.png)
