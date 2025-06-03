@@ -57,7 +57,7 @@ Run the following command to visualize the training and testing process:
 tensorboard --logdir projects/logs
 ```
 
-A checkpoint of our model is provided in `pretrained/00840solver.zip`(154M). Note that if you haven't installed Git LFS, please download `00840solver.zip` separately by clicking on it in GitHub.
+A checkpoint of our model is provided in `pretrained/00840solver.zip`. Note that if you haven't installed Git LFS, please download `00840solver.zip`(154M) separately by clicking on it in GitHub.
 
 ## 4. Test
 
