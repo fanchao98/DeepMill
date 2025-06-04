@@ -46,15 +46,17 @@ If successful, the script will create two new folders, `filelist` and `points`, 
 ## 3. Train
 
 Run the following command to train the network:
-
 ```
-python projects/run_seg_deepmill.py --depth 5 --model unet --alias unet_d5
+cd projects
+```
+```
+python run_seg_deepmill.py --depth 5 --model unet --alias unet_d5
 ```
 The dataset will be randomly split into a training set and a test set.
 
 Run the following command to visualize the training and testing process:
 ```
-tensorboard --logdir projects/logs
+tensorboard --logdir logs
 ```
 
 A checkpoint of our model is provided in `pretrained/00840solver.zip`. Note that if you haven't installed Git LFS, please download `00840solver.zip`(154M) separately by clicking on it in GitHub.
