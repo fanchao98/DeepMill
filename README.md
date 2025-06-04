@@ -60,10 +60,9 @@ tensorboard --logdir logs
 ```
 
 By default, test is performed every 50 epochs. If you do not need to output the predicted inaccessible points during each test (which can be time-consuming), you can comment out the following lines in `projects/segmentation.py`:
-*
-self.visualization(batch['points'], logit_1, label, red_folder, gt_red_folder)  
-self.visualization1(batch['points'], logit_2, label_2, green_folder, gt_green_folder)
-*
+*self.visualization(batch['points'], logit_1, label, red_folder, gt_red_folder)* 
+*self.visualization1(batch['points'], logit_2, label_2, green_folder, gt_green_folder)*
+
 
 A checkpoint of our model is provided in `pretrained/00840solver.zip`. Note that if you haven't installed Git LFS, please download `00840solver.zip`(154M) separately by clicking on it in GitHub.
 
