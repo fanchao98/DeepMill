@@ -28,7 +28,7 @@ mode = args.mode
 ratios = args.ratios
 # ratios = [0.01, 0.02, 0.05, 0.10, 0.20, 0.50, 1.00]
 
-module = 'projects/segmentation.py'
+module = 'segmentation.py'
 script = 'python %s --config configs/seg_deepmill.yaml' % module
 data = 'data'
 logdir = 'logs/seg_deepmill'
