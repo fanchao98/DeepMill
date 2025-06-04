@@ -76,7 +76,7 @@ If you find this project useful for your research, please kindly cite our paper:
 @article{zhong2025deepmill,
   title={DeepMill: Neural Accessibility Learning for Subtractive Manufacturing},
   author={Zhong, Fanchao and Wang, Yang and Wang, Peng-Shuai and Lu, Lin and Zhao, Haisen},
-  journal={arXiv preprint arXiv:2502.06093},
+  booktitle={SIGGRAPH 2025 conference papers},
   year={2025}
 }
 ```
