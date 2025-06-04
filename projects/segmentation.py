@@ -176,6 +176,16 @@ class SegSolver(Solver):
         num_class = self.FLAGS.LOSS.num_class
         IoU, insc, union = self.IoU_per_shape(logit_1, label, num_class)
 
+        folders = [
+            './visual/red_points',
+            './visual/GT_red',
+            './visual/green_points',
+            './visual/GT_green'
+        ]
+        for folder in folders:
+            if not os.path.exists(folder):
+                os.makedirs(folder)
+              
         red_folder = os.path.join(r"./visual/red_points",
                                   batch['filename'][0].split("/")[-1].split(".")[0].split("_collision_detection")[
                                       0] + ".obj")
