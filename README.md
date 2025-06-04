@@ -35,9 +35,12 @@ Each line in the file contains 8 values representing a sampled point: 3D coordin
 Additionally, the tool sizes used for each 3D model should be stored in `DeepMill/projects/data/raw_data/models_cutter`, with each `.txt` file containing four parameters that define the tool's shape. 
 We provide part of the data we used in `data/raw_data/data.zip`. If you haven't installed Git LFS, please download `data.zip`(568M) separately by clicking on it in GitHub.
 
-Once the data is in place, run the following command to preprocess the dataset:
+Once the data is in place, run the following commands to preprocess the dataset:
 ```
-python projects/tools/seg_deepmill_cutter.py
+cd projects
+```
+```
+python tools/seg_deepmill_cutter.py
 ```
 If successful, the script will create two new folders, `filelist` and `points`, in `DeepMill/projects/data`.
 
@@ -46,9 +49,7 @@ If successful, the script will create two new folders, `filelist` and `points`, 
 ## 3. Train
 
 Run the following command to train the network:
-```
-cd projects
-```
+
 ```
 python run_seg_deepmill.py --depth 5 --model unet --alias unet_d5
 ```
