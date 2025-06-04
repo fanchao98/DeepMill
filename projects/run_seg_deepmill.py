@@ -49,7 +49,7 @@ for i in range(len(ratios)):
     max_epoch = int(max_epoches[k] * ratio * mul)
     milestone1, milestone2 = int(0.5 * max_epoch), int(0.25 * max_epoch)
     # test_every_epoch = int(math.ceil(max_epoch * 0.02))
-    test_every_epoch = 10
+    test_every_epoch = 50
     take = int(math.ceil(train_num[k] * ratio))
     logs = os.path.join(
         logdir, '{}/{}_{}/ratio_{:.2f}'.format(alias, cat, names[k], ratio))
