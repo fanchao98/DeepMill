@@ -43,7 +43,7 @@ cd projects
 python tools/seg_deepmill_cutter.py
 ```
 If successful, the script will create two new folders, `filelist` and `points`, in `DeepMill/projects/data`.
-
+The dataset will be randomly split into a training set and a test set.
 
 
 ## 3. Train
@@ -53,7 +53,6 @@ Run the following command to train the network:
 ```
 python run_seg_deepmill.py --depth 5 --model unet --alias unet_d5
 ```
-The dataset will be randomly split into a training set and a test set.
 
 Run the following command to visualize the training and testing process:
 ```
