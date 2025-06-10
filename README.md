@@ -64,7 +64,7 @@ By default, test is performed every 50 epochs. If you do not need to output the 
 *self.visualization1(batch['points'], logit_2, label_2, green_folder, gt_green_folder)*
 
 
-A checkpoint of our model is provided in `pretrained/00840solver.zip`. Note that if you haven't installed Git LFS, please download `00840solver.zip`(154M) separately by clicking on it in GitHub.
+A checkpoint of our model is provided in `pretrained/00840solver.zip`. Note that if you haven't installed Git LFS, please download `00840solver.zip`(461M) separately by clicking on it in GitHub.
 
 ## 4. Test
 
