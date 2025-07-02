@@ -36,8 +36,8 @@ logdir = 'logs/seg_deepmill'
 categories = ['models']
 names = ['models']
 seg_num = [2]
-train_num = [5589]
-test_num = [1000]
+train_num = [4471]
+test_num = [1118]
 max_epoches = [1500]
 max_iters = [1500]
 
