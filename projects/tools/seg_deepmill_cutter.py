@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 # The following line is to deal with the error of "SSL: CERTIFICATE_VERIFY_FAILED"
 # when using wget. (Ref: https://stackoverflow.com/questions/35569042/ssl-certificate-verify-failed-with-python3)
-# 绕过SSL证书验证
+
 ssl._create_default_https_context = ssl._create_unverified_context
 
 abs_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
