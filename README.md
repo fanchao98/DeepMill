@@ -78,10 +78,11 @@ In `projects/data/vis`, you can view the inaccessible points predicted by DeepMi
 If you find this project useful for your research, please kindly cite our paper:
 
 ```bibtex
-@article{zhong2025deepmill,
+@inproceedings{zhong2025deepmill,
   title={DeepMill: Neural Accessibility Learning for Subtractive Manufacturing},
   author={Zhong, Fanchao and Wang, Yang and Wang, Peng-Shuai and Lu, Lin and Zhao, Haisen},
-  booktitle={SIGGRAPH 2025 conference papers},
+  booktitle={Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
+  pages={1--11},
   year={2025}
 }
 ```
